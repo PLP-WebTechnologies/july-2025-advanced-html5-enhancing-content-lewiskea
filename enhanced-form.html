@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Exploring HTML5 Content & Forms</h1>
+    <p>This page demonstrates effective use of lists, tables, media, and a fully structured, validated HTML5 form.</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>HTML5 Lists</h2>
+        <h3>Ordered List - Steps to Bake a Cake</h3>
+        <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>Mix the dry ingredients together.</li>
+            <li>Whisk the wet ingredients separately.</li>
+            <li>Combine wet and dry ingredients until smooth.</li>
+            <li>Pour batter into a greased pan and bake for 30 minutes.</li>
+        </ol>
+
+        <h3>Unordered List - Common Baking Ingredients</h3>
+        <ul>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Butter</li>
+            <li>Eggs</li>
+            <li>Baking powder</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+
+    <!-- Tables Section -->
+    <section>
+        <h2>HTML5 Tables</h2>
+        <table>
+            <caption>Monthly Temperature Data</caption>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Average High (&deg;C)</th>
+                    <th>Average Low (&deg;C)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>25</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>27</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>28</td>
+                    <td>17</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Embedded Media</h2>
+        <div>
+            <h3>Image Example</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Crystal_Clear_app_kscreensaver.png/600px-Crystal_Clear_app_kscreensaver.png" alt="Example Image of a Screen Saver Icon" />
+        </div>
+        <div>
+            <h3>Audio Example</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div>
+            <h3>Video Example</h3>
+            <video controls width="480" height="270" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
+                <source src="https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>User Registration Form</h2>
+        <form action="#" method="post" autocomplete="on" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" maxlength="50" />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters" />
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="8" placeholder="Re-enter your password" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Profile Details</legend>
+
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate" required max="2005-12-31" />
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="prefer-not">Prefer not to say</option>
+                </select>
+
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." minlength="10" maxlength="300"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes" />
+                    Subscribe to newsletter
+                </label>
+
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color" value="#0000ff" />
+
+                <label for="website">Personal Website (optional)</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com" pattern="https?://.+" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms and Submission</legend>
+                <label>
+                    <input type="checkbox" name="terms" required />
+                    I agree to the <a href="#" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>.
+                </label>
+
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Your Name - All rights reserved.</p>
+</footer>
+
+</body>
+</html>
